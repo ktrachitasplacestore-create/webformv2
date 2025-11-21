@@ -30,14 +30,14 @@
 
         /* Estilo personalizado para radio buttons */
         .custom-radio:checked + div {
-            border-color: #2563eb;
-            background-color: #eff6ff;
-            color: #1e40af;
+            border-color: #d97706; /* amber-600 */
+            background-color: #fffbeb; /* amber-50 */
+            color: #92400e; /* amber-800 */
         }
         
         .custom-radio:checked + div .radio-circle {
-            background-color: #2563eb;
-            border-color: #2563eb;
+            background-color: #d97706; /* amber-600 */
+            border-color: #d97706; /* amber-600 */
         }
         
         .radio-circle {
@@ -47,7 +47,7 @@
         /* Loader Spinner */
         .loader {
             border: 4px solid #f3f3f3;
-            border-top: 4px solid #3498db;
+            border-top: 4px solid #d97706; /* amber-600 */
             border-radius: 50%;
             width: 30px;
             height: 30px;
@@ -61,28 +61,28 @@
         }
     </style>
 </head>
-<body class="min-h-screen flex flex-col bg-gradient-to-br from-slate-100 to-slate-200">
+<body class="min-h-screen flex flex-col bg-gradient-to-br from-slate-100 to-amber-100">
 
     <!-- Header -->
-    <header class="bg-white shadow-sm py-4">
+    <header class="bg-white shadow-sm py-4 flex-none">
         <div class="max-w-3xl mx-auto px-4 flex items-center justify-between">
             <div class="flex items-center gap-2">
-                <div class="bg-blue-600 text-white p-2 rounded-lg">
-                    <i data-lucide="globe" class="w-6 h-6"></i>
-                </div>
-                <h1 class="font-bold text-xl text-slate-800 tracking-tight">Tu Página Web en 48h</h1>
+                <!-- Logo actualizado -->
+                <img src="https://res.cloudinary.com/dufxtzcpl/image/upload/v1763740409/IMG_0151_yank6f.jpg" alt="CL Tech Solutions" class="h-12 w-auto rounded-lg">
+                <h1 class="font-bold text-xl text-slate-800 tracking-tight ml-2">Tu Página Web en 48h</h1>
             </div>
             <span class="text-sm text-slate-500 font-medium hidden sm:block">Diseño Profesional Rápido</span>
         </div>
     </header>
 
     <!-- Main Content -->
-    <main class="flex-grow flex items-center justify-center p-4 py-8">
-        <div class="w-full max-w-3xl bg-white rounded-2xl shadow-xl overflow-hidden border border-slate-100 relative">
+    <main class="flex-grow flex flex-col items-center justify-center p-4 py-8 w-full">
+        <div class="w-full max-w-3xl bg-white rounded-2xl shadow-xl overflow-hidden border border-slate-100 relative mb-8">
             
             <!-- Progress Bar -->
             <div id="progress-container" class="bg-slate-100 h-2 w-full">
-                <div id="progress-bar" class="bg-blue-600 h-2 transition-all duration-500 ease-out" style="width: 14%;"></div>
+                <!-- Color de la barra de progreso actualizado -->
+                <div id="progress-bar" class="bg-amber-600 h-2 transition-all duration-500 ease-out" style="width: 14%;"></div>
             </div>
 
             <!-- Form Container -->
@@ -93,15 +93,17 @@
                     <!-- INTRODUCCIÓN (Paso 0) -->
                     <div class="step-content active" data-step="0">
                         <div class="text-center py-6">
-                            <div class="bg-blue-50 mx-auto w-20 h-20 rounded-full flex items-center justify-center mb-6">
-                                <i data-lucide="rocket" class="w-10 h-10 text-blue-600"></i>
+                            <!-- Color del icono actualizado -->
+                            <div class="bg-amber-50 mx-auto w-20 h-20 rounded-full flex items-center justify-center mb-6">
+                                <i data-lucide="rocket" class="w-10 h-10 text-amber-600"></i>
                             </div>
                             <h2 class="text-3xl font-bold text-slate-800 mb-4">¡Comencemos tu Proyecto!</h2>
                             <p class="text-slate-600 mb-6 text-lg">
                                 Gracias por tu interés en recibir tu página web profesional. 
                                 Por favor completa la siguiente información. Mientras más claro seas, más rápido podremos diseñar tu proyecto.
                             </p>
-                            <button type="button" onclick="nextStep()" class="bg-blue-600 hover:bg-blue-700 text-white font-bold py-3 px-8 rounded-xl transition shadow-lg hover:shadow-blue-500/30 flex items-center gap-2 mx-auto">
+                            <!-- Color del botón actualizado -->
+                            <button type="button" onclick="nextStep()" class="bg-amber-600 hover:bg-amber-700 text-white font-bold py-3 px-8 rounded-xl transition shadow-lg hover:shadow-amber-500/30 flex items-center gap-2 mx-auto">
                                 Iniciar Formulario <i data-lucide="arrow-right" class="w-5 h-5"></i>
                             </button>
                         </div>
@@ -119,22 +121,24 @@
                         <div class="space-y-6">
                             <div>
                                 <label class="block text-sm font-medium text-slate-700 mb-2">Nombre del dueño o representante <span class="text-red-500">*</span></label>
-                                <input type="text" name="nombre_representante" required class="w-full px-4 py-3 rounded-lg border border-slate-300 focus:ring-2 focus:ring-blue-500 focus:border-blue-500 outline-none transition" placeholder="Ej. Juan Pérez">
+                                <input type="text" name="nombre_representante" required class="w-full px-4 py-3 rounded-lg border border-slate-300 focus:ring-2 focus:ring-amber-500 focus:border-amber-500 outline-none transition" placeholder="Ej. Juan Pérez">
                             </div>
                             
                             <div>
                                 <label class="block text-sm font-medium text-slate-700 mb-2">Número de WhatsApp <span class="text-red-500">*</span></label>
-                                <input type="tel" name="whatsapp_contacto" required class="w-full px-4 py-3 rounded-lg border border-slate-300 focus:ring-2 focus:ring-blue-500 focus:border-blue-500 outline-none transition" placeholder="Ej. +504 9999-9999">
+                                <!-- Actualizado a ejemplo Ecuador -->
+                                <input type="tel" name="whatsapp_contacto" required class="w-full px-4 py-3 rounded-lg border border-slate-300 focus:ring-2 focus:ring-amber-500 focus:border-amber-500 outline-none transition" placeholder="Ej. +593 99 123 4567">
                             </div>
 
                             <div>
                                 <label class="block text-sm font-medium text-slate-700 mb-2">Nombre de tu negocio o emprendimiento <span class="text-red-500">*</span></label>
-                                <input type="text" name="nombre_negocio" required class="w-full px-4 py-3 rounded-lg border border-slate-300 focus:ring-2 focus:ring-blue-500 focus:border-blue-500 outline-none transition" placeholder="Ej. Comedor La Bendición">
+                                <input type="text" name="nombre_negocio" required class="w-full px-4 py-3 rounded-lg border border-slate-300 focus:ring-2 focus:ring-amber-500 focus:border-amber-500 outline-none transition" placeholder="Ej. Comedor La Bendición">
                             </div>
 
                             <div>
                                 <label class="block text-sm font-medium text-slate-700 mb-2">¿En qué ciudad te encuentras? <span class="text-red-500">*</span></label>
-                                <input type="text" name="ciudad" required class="w-full px-4 py-3 rounded-lg border border-slate-300 focus:ring-2 focus:ring-blue-500 focus:border-blue-500 outline-none transition" placeholder="Ej. Tegucigalpa">
+                                <!-- Actualizado a ejemplos Ecuador -->
+                                <input type="text" name="ciudad" required class="w-full px-4 py-3 rounded-lg border border-slate-300 focus:ring-2 focus:ring-amber-500 focus:border-amber-500 outline-none transition" placeholder="Ej. Quito, Guayaquil, Cuenca">
                             </div>
                         </div>
                         <div class="mt-8 flex justify-end">
@@ -157,7 +161,7 @@
                             <!-- Opción 1 -->
                             <label class="cursor-pointer relative block">
                                 <input type="radio" name="tipo_pagina" value="Profesional" class="custom-radio sr-only" required onchange="toggleOtherInput('other-type', false)">
-                                <div class="p-4 rounded-xl border border-slate-200 hover:border-blue-300 flex items-start gap-3 transition">
+                                <div class="p-4 rounded-xl border border-slate-200 hover:border-amber-300 flex items-start gap-3 transition">
                                     <div class="radio-circle w-5 h-5 rounded-full border border-slate-300 mt-0.5 flex-shrink-0"></div>
                                     <div>
                                         <span class="font-semibold block text-slate-800">Página web profesional</span>
@@ -169,7 +173,7 @@
                             <!-- Opción 2 -->
                             <label class="cursor-pointer relative block">
                                 <input type="radio" name="tipo_pagina" value="Restaurante" class="custom-radio sr-only" onchange="toggleOtherInput('other-type', false)">
-                                <div class="p-4 rounded-xl border border-slate-200 hover:border-blue-300 flex items-start gap-3 transition">
+                                <div class="p-4 rounded-xl border border-slate-200 hover:border-amber-300 flex items-start gap-3 transition">
                                     <div class="radio-circle w-5 h-5 rounded-full border border-slate-300 mt-0.5 flex-shrink-0"></div>
                                     <div>
                                         <span class="font-semibold block text-slate-800">Restaurantes / Comida rápida</span>
@@ -181,7 +185,7 @@
                             <!-- Opción 3 -->
                             <label class="cursor-pointer relative block">
                                 <input type="radio" name="tipo_pagina" value="Tienda" class="custom-radio sr-only" onchange="toggleOtherInput('other-type', false)">
-                                <div class="p-4 rounded-xl border border-slate-200 hover:border-blue-300 flex items-start gap-3 transition">
+                                <div class="p-4 rounded-xl border border-slate-200 hover:border-amber-300 flex items-start gap-3 transition">
                                     <div class="radio-circle w-5 h-5 rounded-full border border-slate-300 mt-0.5 flex-shrink-0"></div>
                                     <div>
                                         <span class="font-semibold block text-slate-800">Tienda Pequeña</span>
@@ -193,7 +197,7 @@
                             <!-- Opción 4 -->
                             <label class="cursor-pointer relative block">
                                 <input type="radio" name="tipo_pagina" value="Profesional Salud/Legal" class="custom-radio sr-only" onchange="toggleOtherInput('other-type', false)">
-                                <div class="p-4 rounded-xl border border-slate-200 hover:border-blue-300 flex items-start gap-3 transition">
+                                <div class="p-4 rounded-xl border border-slate-200 hover:border-amber-300 flex items-start gap-3 transition">
                                     <div class="radio-circle w-5 h-5 rounded-full border border-slate-300 mt-0.5 flex-shrink-0"></div>
                                     <div>
                                         <span class="font-semibold block text-slate-800">Servicios Profesionales</span>
@@ -205,14 +209,14 @@
                             <!-- Opción 5 (Otra) -->
                             <label class="cursor-pointer relative block">
                                 <input type="radio" name="tipo_pagina" value="Otra" class="custom-radio sr-only" onchange="toggleOtherInput('other-type', true)">
-                                <div class="p-4 rounded-xl border border-slate-200 hover:border-blue-300 flex items-start gap-3 transition">
+                                <div class="p-4 rounded-xl border border-slate-200 hover:border-amber-300 flex items-start gap-3 transition">
                                     <div class="radio-circle w-5 h-5 rounded-full border border-slate-300 mt-0.5 flex-shrink-0"></div>
                                     <span class="font-semibold block text-slate-800">Otra (explicar abajo)</span>
                                 </div>
                             </label>
 
                             <div id="other-type" class="hidden mt-2 pl-8">
-                                <textarea name="tipo_pagina_detalle" class="w-full px-4 py-3 rounded-lg border border-slate-300 focus:ring-2 focus:ring-blue-500 outline-none" placeholder="Describe brevemente qué tipo de página necesitas..."></textarea>
+                                <textarea name="tipo_pagina_detalle" class="w-full px-4 py-3 rounded-lg border border-slate-300 focus:ring-2 focus:ring-amber-500 outline-none" placeholder="Describe brevemente qué tipo de página necesitas..."></textarea>
                             </div>
                         </div>
 
@@ -234,17 +238,47 @@
                         <div class="space-y-6">
                             <div>
                                 <label class="block text-sm font-medium text-slate-700 mb-2">¿Qué servicios o productos ofreces? <span class="text-red-500">*</span></label>
-                                <textarea name="servicios_productos" required rows="3" class="w-full px-4 py-3 rounded-lg border border-slate-300 focus:ring-2 focus:ring-blue-500 outline-none" placeholder="Enumera tus principales productos o servicios..."></textarea>
+                                <textarea name="servicios_productos" required rows="3" class="w-full px-4 py-3 rounded-lg border border-slate-300 focus:ring-2 focus:ring-amber-500 outline-none" placeholder="Enumera tus principales productos o servicios..."></textarea>
                             </div>
 
+                            <!-- Redes Sociales Actualizado -->
                             <div>
-                                <label class="block text-sm font-medium text-slate-700 mb-2">Redes sociales (si tienes)</label>
-                                <input type="text" name="redes_sociales" class="w-full px-4 py-3 rounded-lg border border-slate-300 focus:ring-2 focus:ring-blue-500 outline-none" placeholder="Facebook, Instagram, TikTok...">
+                                <label class="block text-sm font-medium text-slate-700 mb-3">Redes sociales (Pega el enlace de tu perfil)</label>
+                                <div class="grid grid-cols-1 gap-3">
+                                    <!-- Facebook -->
+                                    <div class="relative">
+                                        <div class="absolute inset-y-0 left-0 pl-3 flex items-center pointer-events-none">
+                                            <i data-lucide="facebook" class="h-5 w-5 text-blue-600"></i>
+                                        </div>
+                                        <input type="url" name="facebook_link" class="pl-10 w-full px-4 py-3 rounded-lg border border-slate-300 focus:ring-2 focus:ring-blue-500 outline-none transition" placeholder="Enlace de Facebook">
+                                    </div>
+                                    <!-- Instagram -->
+                                    <div class="relative">
+                                        <div class="absolute inset-y-0 left-0 pl-3 flex items-center pointer-events-none">
+                                            <i data-lucide="instagram" class="h-5 w-5 text-pink-600"></i>
+                                        </div>
+                                        <input type="url" name="instagram_link" class="pl-10 w-full px-4 py-3 rounded-lg border border-slate-300 focus:ring-2 focus:ring-pink-500 outline-none transition" placeholder="Enlace de Instagram">
+                                    </div>
+                                    <!-- TikTok (usando icono music-2 como proxy o generic share) -->
+                                    <div class="relative">
+                                        <div class="absolute inset-y-0 left-0 pl-3 flex items-center pointer-events-none">
+                                            <i data-lucide="music-2" class="h-5 w-5 text-slate-900"></i>
+                                        </div>
+                                        <input type="url" name="tiktok_link" class="pl-10 w-full px-4 py-3 rounded-lg border border-slate-300 focus:ring-2 focus:ring-slate-800 outline-none transition" placeholder="Enlace de TikTok">
+                                    </div>
+                                    <!-- YouTube -->
+                                    <div class="relative">
+                                        <div class="absolute inset-y-0 left-0 pl-3 flex items-center pointer-events-none">
+                                            <i data-lucide="youtube" class="h-5 w-5 text-red-600"></i>
+                                        </div>
+                                        <input type="url" name="youtube_link" class="pl-10 w-full px-4 py-3 rounded-lg border border-slate-300 focus:ring-2 focus:ring-red-500 outline-none transition" placeholder="Enlace de YouTube">
+                                    </div>
+                                </div>
                             </div>
 
                             <div>
                                 <label class="block text-sm font-medium text-slate-700 mb-2">¿Qué te diferencia de otros?</label>
-                                <textarea name="diferenciador" rows="2" class="w-full px-4 py-3 rounded-lg border border-slate-300 focus:ring-2 focus:ring-blue-500 outline-none" placeholder="Ej. Envíos rápidos, ingredientes frescos, atención personalizada..."></textarea>
+                                <textarea name="diferenciador" rows="2" class="w-full px-4 py-3 rounded-lg border border-slate-300 focus:ring-2 focus:ring-amber-500 outline-none" placeholder="Ej. Envíos rápidos, ingredientes frescos, atención personalizada..."></textarea>
                             </div>
                         </div>
 
@@ -258,7 +292,7 @@
                     <div class="step-content" data-step="4">
                         <div class="mb-6 border-b pb-4">
                             <h3 class="text-xl font-bold text-slate-800 flex items-center gap-2">
-                                <span class="bg-blue-100 text-blue-600 w-8 h-8 rounded-full flex items-center justify-center text-sm">4</span>
+                                <span class="bg-amber-100 text-amber-600 w-8 h-8 rounded-full flex items-center justify-center text-sm">4</span>
                                 Dominio y Hosting
                             </h3>
                         </div>
@@ -268,28 +302,28 @@
                             <p class="mb-2">Formato: <strong>tunegocio.crisslombeida.com</strong> (Opción del proyecto social).</p>
                             <hr class="border-blue-200 my-2">
                             <p class="italic text-xs text-slate-600">
-                                * Si eliges dominio propio ($79/año), ayudas a que podamos seguir entregando páginas web gratuitas.
+                                * Al elegir el subdominio gratis, los emprendedores entran a una rifa semanal para la entrega de las páginas gratis. Se regalan 5 páginas a la semana. Si no quieres esperar, da ese paso importante y compra tu dominio.
                             </p>
                         </div>
 
                         <div class="space-y-4">
                             <label class="cursor-pointer relative block">
                                 <input type="radio" name="tipo_dominio" value="Subdominio Gratis" class="custom-radio sr-only" required>
-                                <div class="p-4 rounded-xl border border-slate-200 hover:border-blue-300 flex items-start gap-3 transition">
+                                <div class="p-4 rounded-xl border border-slate-200 hover:border-amber-300 flex items-start gap-3 transition">
                                     <div class="radio-circle w-5 h-5 rounded-full border border-slate-300 mt-0.5 flex-shrink-0"></div>
                                     <div>
                                         <span class="font-semibold block text-slate-800">Subdominio GRATIS</span>
-                                        <span class="text-sm text-slate-500">tunegocio.crisslombeida.com</span>
+                                        <span class="text-sm text-slate-500">tunegocio.crisslombeida.com (Entras a la rifa semanal)</span>
                                     </div>
                                 </div>
                             </label>
 
                             <label class="cursor-pointer relative block">
                                 <input type="radio" name="tipo_dominio" value="Dominio Propio" class="custom-radio sr-only">
-                                <div class="p-4 rounded-xl border border-slate-200 hover:border-blue-300 flex items-start gap-3 transition">
+                                <div class="p-4 rounded-xl border border-slate-200 hover:border-amber-300 flex items-start gap-3 transition">
                                     <div class="radio-circle w-5 h-5 rounded-full border border-slate-300 mt-0.5 flex-shrink-0"></div>
                                     <div>
-                                        <span class="font-semibold block text-slate-800">Dominio propio ($79 USD/año)</span>
+                                        <span class="font-semibold block text-slate-800">Dominio propio ($97 USD/año)</span>
                                         <span class="text-sm text-slate-500">Incluye .com, hosting y configuración.</span>
                                     </div>
                                 </div>
@@ -297,7 +331,7 @@
 
                             <label class="cursor-pointer relative block">
                                 <input type="radio" name="tipo_dominio" value="Asesoria" class="custom-radio sr-only">
-                                <div class="p-4 rounded-xl border border-slate-200 hover:border-blue-300 flex items-start gap-3 transition">
+                                <div class="p-4 rounded-xl border border-slate-200 hover:border-amber-300 flex items-start gap-3 transition">
                                     <div class="radio-circle w-5 h-5 rounded-full border border-slate-300 mt-0.5 flex-shrink-0"></div>
                                     <span class="font-semibold block text-slate-800">Tengo dudas, necesito asesoría</span>
                                 </div>
@@ -331,7 +365,7 @@
                                         <input type="file" name="logo_file" class="hidden" accept="image/*" onchange="updateFileName(this, 'logo-name')"/>
                                     </label>
                                 </div>
-                                <p id="logo-name" class="text-xs text-blue-600 mt-1 text-center font-medium"></p>
+                                <p id="logo-name" class="text-xs text-amber-600 mt-1 text-center font-medium"></p>
                             </div>
 
                             <div>
@@ -345,7 +379,7 @@
                                         <input type="file" name="photos_file" class="hidden" multiple accept="image/*" onchange="updateFileName(this, 'photos-name')"/>
                                     </label>
                                 </div>
-                                <p id="photos-name" class="text-xs text-blue-600 mt-1 text-center font-medium"></p>
+                                <p id="photos-name" class="text-xs text-amber-600 mt-1 text-center font-medium"></p>
                             </div>
                         </div>
 
@@ -368,32 +402,32 @@
                             <label class="block text-sm font-medium text-slate-700 mb-2">¿Cuál es tu objetivo principal? <span class="text-red-500">*</span></label>
                             
                             <label class="flex items-center gap-3 p-3 border rounded-lg hover:bg-slate-50 cursor-pointer">
-                                <input type="radio" name="objetivo" value="Aumentar clientes" class="custom-radio text-blue-600 focus:ring-blue-500" required onchange="toggleOtherInput('other-obj', false)">
+                                <input type="radio" name="objetivo" value="Aumentar clientes" class="custom-radio text-amber-600 focus:ring-amber-500" required onchange="toggleOtherInput('other-obj', false)">
                                 <span class="text-slate-700">Aumentar clientes</span>
                             </label>
                             
                             <label class="flex items-center gap-3 p-3 border rounded-lg hover:bg-slate-50 cursor-pointer">
-                                <input type="radio" name="objetivo" value="Pedidos WhatsApp" class="custom-radio text-blue-600 focus:ring-blue-500" onchange="toggleOtherInput('other-obj', false)">
+                                <input type="radio" name="objetivo" value="Pedidos WhatsApp" class="custom-radio text-amber-600 focus:ring-amber-500" onchange="toggleOtherInput('other-obj', false)">
                                 <span class="text-slate-700">Recibir más pedidos por WhatsApp</span>
                             </label>
 
                             <label class="flex items-center gap-3 p-3 border rounded-lg hover:bg-slate-50 cursor-pointer">
-                                <input type="radio" name="objetivo" value="Presencia Profesional" class="custom-radio text-blue-600 focus:ring-blue-500" onchange="toggleOtherInput('other-obj', false)">
+                                <input type="radio" name="objetivo" value="Presencia Profesional" class="custom-radio text-amber-600 focus:ring-amber-500" onchange="toggleOtherInput('other-obj', false)">
                                 <span class="text-slate-700">Tener presencia profesional</span>
                             </label>
 
                             <label class="flex items-center gap-3 p-3 border rounded-lg hover:bg-slate-50 cursor-pointer">
-                                <input type="radio" name="objetivo" value="Ventas Carrito" class="custom-radio text-blue-600 focus:ring-blue-500" onchange="toggleOtherInput('other-obj', false)">
+                                <input type="radio" name="objetivo" value="Ventas Carrito" class="custom-radio text-amber-600 focus:ring-amber-500" onchange="toggleOtherInput('other-obj', false)">
                                 <span class="text-slate-700">Aumentar ventas con carrito de compras</span>
                             </label>
 
                             <label class="flex items-center gap-3 p-3 border rounded-lg hover:bg-slate-50 cursor-pointer">
-                                <input type="radio" name="objetivo" value="Otra" class="custom-radio text-blue-600 focus:ring-blue-500" onchange="toggleOtherInput('other-obj', true)">
+                                <input type="radio" name="objetivo" value="Otra" class="custom-radio text-amber-600 focus:ring-amber-500" onchange="toggleOtherInput('other-obj', true)">
                                 <span class="text-slate-700">Otra (describir)</span>
                             </label>
 
                             <div id="other-obj" class="hidden mt-2 pl-8">
-                                <textarea name="objetivo_detalle" class="w-full px-4 py-3 rounded-lg border border-slate-300 focus:ring-2 focus:ring-blue-500 outline-none" placeholder="Describe tu objetivo..."></textarea>
+                                <textarea name="objetivo_detalle" class="w-full px-4 py-3 rounded-lg border border-slate-300 focus:ring-2 focus:ring-amber-500 outline-none" placeholder="Describe tu objetivo..."></textarea>
                             </div>
                         </div>
 
@@ -419,12 +453,12 @@
                             
                             <div class="text-left space-y-3 max-w-md mx-auto">
                                 <label class="flex items-center gap-3 p-3 border bg-white rounded-lg cursor-pointer shadow-sm">
-                                    <input type="radio" name="confirmacion" value="SI" class="custom-radio text-blue-600" required>
+                                    <input type="radio" name="confirmacion" value="SI" class="custom-radio text-amber-600" required>
                                     <span class="font-semibold text-slate-800">Sí, confirmo. ¡Inicien mi web!</span>
                                 </label>
 
                                 <label class="flex items-center gap-3 p-3 border bg-white rounded-lg cursor-pointer shadow-sm">
-                                    <input type="radio" name="confirmacion" value="DUDAS" class="custom-radio text-blue-600">
+                                    <input type="radio" name="confirmacion" value="DUDAS" class="custom-radio text-amber-600">
                                     <span class="text-slate-700">Aún tengo dudas, quiero hablar con un asesor.</span>
                                 </label>
                             </div>
@@ -440,7 +474,7 @@
 
                     <!-- PANTALLA DE CARGA (Oculta) -->
                     <div id="loading-screen" class="hidden text-center py-12">
-                        <div class="loader mb-4 border-t-blue-600 border-4"></div>
+                        <div class="loader mb-4 border-t-amber-600 border-4"></div>
                         <p class="text-slate-600 font-medium">Enviando tu información...</p>
                     </div>
 
@@ -471,10 +505,10 @@
             </div>
         </div>
         
-        <!-- Footer Simple -->
-        <div class="absolute bottom-2 text-slate-400 text-xs text-center w-full">
-            &copy; 2025 Cristian Lombeida Web Project
-        </div>
+        <!-- Footer Corregido -->
+        <footer class="w-full py-6 text-center text-slate-500 text-sm mt-auto">
+            &copy; 2025 CL Tech Solutions, al servicio de emprendedores latinos
+        </footer>
     </main>
 
     <script>
