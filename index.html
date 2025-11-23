@@ -97,11 +97,25 @@
                             <div class="bg-amber-50 mx-auto w-20 h-20 rounded-full flex items-center justify-center mb-6">
                                 <i data-lucide="rocket" class="w-10 h-10 text-amber-600"></i>
                             </div>
-                            <h2 class="text-3xl font-bold text-slate-800 mb-4">¡Comencemos tu Proyecto!</h2>
-                            <p class="text-slate-600 mb-6 text-lg">
-                                Gracias por tu interés en recibir tu página web profesional. 
-                                Por favor completa la siguiente información. Mientras más claro seas, más rápido podremos diseñar tu proyecto.
-                            </p>
+                            
+                            <!-- Título actualizado -->
+                            <h2 class="text-3xl font-bold text-slate-800 mb-4">Aprovecha tu Oportunidad de Emprendedor</h2>
+                            
+                            <!-- Texto de cuerpo actualizado -->
+                            <div class="text-slate-600 mb-6 text-lg space-y-4">
+                                <p>
+                                    Tu página web profesional normalmente cuesta $480, pero por ser emprendedor que lucha, hoy te la diseñamos GRATIS.
+                                </p>
+                                <p class="text-amber-800 bg-amber-50 p-4 rounded-lg border border-amber-200">
+                                    <strong>Sólo pagas el dominio y el hosting por un año.</strong><br>
+                                    Nada más. Sin Trucos. Sin letras pequeñas.
+                                </p>
+                                <p>
+                                    Completa este formulario y comienza ahora mismo tu página profesional.<br>
+                                    <strong class="text-slate-800">Tu negocio merece estar en Internet</strong>
+                                </p>
+                            </div>
+
                             <!-- Color del botón actualizado -->
                             <button type="button" onclick="nextStep()" class="bg-amber-600 hover:bg-amber-700 text-white font-bold py-3 px-8 rounded-xl transition shadow-lg hover:shadow-amber-500/30 flex items-center gap-2 mx-auto">
                                 Iniciar Formulario <i data-lucide="arrow-right" class="w-5 h-5"></i>
@@ -158,66 +172,45 @@
                         <div class="space-y-4">
                             <label class="block text-sm font-medium text-slate-700 mb-2">¿Qué tipo de página necesitas? <span class="text-red-500">*</span></label>
                             
-                            <!-- Opción 1 -->
+                            <!-- Opción 1: Servicios -->
                             <label class="cursor-pointer relative block">
-                                <input type="radio" name="tipo_pagina" value="Profesional" class="custom-radio sr-only" required onchange="toggleOtherInput('other-type', false)">
+                                <input type="radio" name="tipo_pagina" value="Servicios" class="custom-radio sr-only" required>
                                 <div class="p-4 rounded-xl border border-slate-200 hover:border-amber-300 flex items-start gap-3 transition">
                                     <div class="radio-circle w-5 h-5 rounded-full border border-slate-300 mt-0.5 flex-shrink-0"></div>
-                                    <div>
-                                        <span class="font-semibold block text-slate-800">Página web profesional</span>
-                                        <span class="text-sm text-slate-500">Servicios, negocios, marcas personales.</span>
+                                    <div class="flex-1">
+                                        <span class="font-semibold block text-slate-800">Servicios</span>
+                                        <span class="text-sm text-slate-500 block mb-2">Abogados, contador, técnico, coach, marcas personales, etc.</span>
+                                        <span class="inline-block bg-blue-100 text-blue-700 text-xs px-2 py-1 rounded-md font-medium">Incluye Botón: "Agenda por WhatsApp"</span>
                                     </div>
                                 </div>
                             </label>
 
-                            <!-- Opción 2 -->
+                            <!-- Opción 2: Restaurantes -->
                             <label class="cursor-pointer relative block">
-                                <input type="radio" name="tipo_pagina" value="Restaurante" class="custom-radio sr-only" onchange="toggleOtherInput('other-type', false)">
+                                <input type="radio" name="tipo_pagina" value="Restaurantes" class="custom-radio sr-only">
                                 <div class="p-4 rounded-xl border border-slate-200 hover:border-amber-300 flex items-start gap-3 transition">
                                     <div class="radio-circle w-5 h-5 rounded-full border border-slate-300 mt-0.5 flex-shrink-0"></div>
-                                    <div>
-                                        <span class="font-semibold block text-slate-800">Restaurantes / Comida rápida</span>
-                                        <span class="text-sm text-slate-500">Menú digital + pedidos por WhatsApp.</span>
+                                    <div class="flex-1">
+                                        <span class="font-semibold block text-slate-800">Restaurantes</span>
+                                        <span class="text-sm text-slate-500 block mb-2">Menú, combos y ubicación en un solo lugar.</span>
+                                        <span class="inline-block bg-orange-100 text-orange-700 text-xs px-2 py-1 rounded-md font-medium">Incluye Botón: "Pedir Ahora"</span>
                                     </div>
                                 </div>
                             </label>
 
-                            <!-- Opción 3 -->
+                            <!-- Opción 3: Postres/Helados -->
                             <label class="cursor-pointer relative block">
-                                <input type="radio" name="tipo_pagina" value="Tienda" class="custom-radio sr-only" onchange="toggleOtherInput('other-type', false)">
+                                <input type="radio" name="tipo_pagina" value="Postres_Helados" class="custom-radio sr-only">
                                 <div class="p-4 rounded-xl border border-slate-200 hover:border-amber-300 flex items-start gap-3 transition">
                                     <div class="radio-circle w-5 h-5 rounded-full border border-slate-300 mt-0.5 flex-shrink-0"></div>
-                                    <div>
-                                        <span class="font-semibold block text-slate-800">Tienda Pequeña</span>
-                                        <span class="text-sm text-slate-500">Hasta 20 productos + carrito + entrega por ubicación.</span>
+                                    <div class="flex-1">
+                                        <span class="font-semibold block text-slate-800">Tiendas de postres, bocaditos, helados</span>
+                                        <span class="text-sm text-slate-500 block mb-2">Sabores, fotos y pedidos rápidos.</span>
+                                        <span class="inline-block bg-pink-100 text-pink-700 text-xs px-2 py-1 rounded-md font-medium">Incluye Botón: "quiero mi helado"</span>
                                     </div>
                                 </div>
                             </label>
 
-                            <!-- Opción 4 -->
-                            <label class="cursor-pointer relative block">
-                                <input type="radio" name="tipo_pagina" value="Profesional Salud/Legal" class="custom-radio sr-only" onchange="toggleOtherInput('other-type', false)">
-                                <div class="p-4 rounded-xl border border-slate-200 hover:border-amber-300 flex items-start gap-3 transition">
-                                    <div class="radio-circle w-5 h-5 rounded-full border border-slate-300 mt-0.5 flex-shrink-0"></div>
-                                    <div>
-                                        <span class="font-semibold block text-slate-800">Servicios Profesionales</span>
-                                        <span class="text-sm text-slate-500">Abogados, médicos, contadores, etc.</span>
-                                    </div>
-                                </div>
-                            </label>
-
-                            <!-- Opción 5 (Otra) -->
-                            <label class="cursor-pointer relative block">
-                                <input type="radio" name="tipo_pagina" value="Otra" class="custom-radio sr-only" onchange="toggleOtherInput('other-type', true)">
-                                <div class="p-4 rounded-xl border border-slate-200 hover:border-amber-300 flex items-start gap-3 transition">
-                                    <div class="radio-circle w-5 h-5 rounded-full border border-slate-300 mt-0.5 flex-shrink-0"></div>
-                                    <span class="font-semibold block text-slate-800">Otra (explicar abajo)</span>
-                                </div>
-                            </label>
-
-                            <div id="other-type" class="hidden mt-2 pl-8">
-                                <textarea name="tipo_pagina_detalle" class="w-full px-4 py-3 rounded-lg border border-slate-300 focus:ring-2 focus:ring-amber-500 outline-none" placeholder="Describe brevemente qué tipo de página necesitas..."></textarea>
-                            </div>
                         </div>
 
                         <div class="mt-8 flex justify-between">
@@ -297,43 +290,71 @@
                             </h3>
                         </div>
 
-                        <div class="bg-blue-50 border border-blue-200 rounded-lg p-4 mb-6 text-sm text-blue-800">
-                            <p class="font-semibold mb-2"><i data-lucide="gift" class="inline w-4 h-4 mb-1"></i> Incluimos un subdominio GRATIS</p>
-                            <p class="mb-2">Formato: <strong>tunegocio.crisslombeida.com</strong> (Opción del proyecto social).</p>
-                            <hr class="border-blue-200 my-2">
-                            <p class="italic text-xs text-slate-600">
-                                * Al elegir el subdominio gratis, los emprendedores entran a una rifa semanal para la entrega de las páginas gratis. Se regalan 5 páginas a la semana. Si no quieres esperar, da ese paso importante y compra tu dominio.
-                            </p>
+                        <!-- Nueva sección persuasiva actualizada -->
+                        <div class="bg-blue-50 border border-blue-200 rounded-lg p-6 mb-8 shadow-sm">
+                            <div class="flex items-center gap-2 mb-4">
+                                <i data-lucide="alert-circle" class="text-amber-600 w-6 h-6"></i>
+                                <h4 class="text-lg font-bold text-slate-800">Importante para Emprendedores</h4>
+                            </div>
+                            
+                            <h5 class="text-lg font-bold text-blue-800 mb-3">¿Quieres Avanzar HOY o esperar semanas?</h5>
+                            
+                            <div class="space-y-4 text-sm text-slate-700 leading-relaxed">
+                                <p>
+                                    Estás recibiendo un regalo real; 
+                                    El diseño profesional de tu página, <span class="line-through text-slate-400">que normalmente pagas $480</span> hoy está <span class="font-bold text-green-600 bg-green-50 px-1 rounded">100% GRATIS</span> para ti.
+                                </p>
+                                <p>
+                                    <strong class="text-slate-900">Pero, aquí la verdad que nadie te dice:</strong><br>
+                                    Los emprendedores que eligen su dominio propio <strong class="text-red-600">NO esperan</strong>. Su página entra directo a producción. Tu marca tiene nombre propio (.com), autoridad, presencia y control total.
+                                </p>
+                                <p>
+                                    Los que eligen subdominio entran a lista de espera para sorteos semanales, junto con decenas de emprendedores esperando ser seleccionados.
+                                </p>
+                                <p class="bg-white p-3 rounded border border-blue-100 italic">
+                                    "Si tu negocio YA está LISTO para crecer, si quieres clientes YA, si quieres que te tomen en serio desde el primer segundo... Invierte solo <strong>$97</strong> por tu dominio + hosting anual y recibes tu sitio diseñado inmediatamente."
+                                </p>
+                                <p class="font-bold text-slate-800 text-center py-2">
+                                    Es tu marca, Es tu futuro. Y hoy es el día perfecto para dar ese paso.<br>
+                                    <span class="text-blue-600">Tú decides el ritmo de tu crecimiento.</span>
+                                </p>
+                            </div>
                         </div>
 
                         <div class="space-y-4">
+                            <!-- Opción 1 -->
                             <label class="cursor-pointer relative block">
                                 <input type="radio" name="tipo_dominio" value="Subdominio Gratis" class="custom-radio sr-only" required>
                                 <div class="p-4 rounded-xl border border-slate-200 hover:border-amber-300 flex items-start gap-3 transition">
                                     <div class="radio-circle w-5 h-5 rounded-full border border-slate-300 mt-0.5 flex-shrink-0"></div>
                                     <div>
-                                        <span class="font-semibold block text-slate-800">Subdominio GRATIS</span>
-                                        <span class="text-sm text-slate-500">tunegocio.crisslombeida.com (Entras a la rifa semanal)</span>
+                                        <span class="font-semibold block text-slate-800">Subdominio GRATIS "Quiero participar en el sorteo"</span>
+                                        <span class="text-sm text-slate-500">(Subdominio gratuito, Entras a lista de espera.)</span>
                                     </div>
                                 </div>
                             </label>
 
+                            <!-- Opción 2 -->
                             <label class="cursor-pointer relative block">
                                 <input type="radio" name="tipo_dominio" value="Dominio Propio" class="custom-radio sr-only">
-                                <div class="p-4 rounded-xl border border-slate-200 hover:border-amber-300 flex items-start gap-3 transition">
+                                <div class="p-4 rounded-xl border border-slate-200 hover:border-amber-300 flex items-start gap-3 transition bg-amber-50/50 ring-1 ring-amber-200">
                                     <div class="radio-circle w-5 h-5 rounded-full border border-slate-300 mt-0.5 flex-shrink-0"></div>
                                     <div>
-                                        <span class="font-semibold block text-slate-800">Dominio propio ($97 USD/año)</span>
-                                        <span class="text-sm text-slate-500">Incluye .com, hosting y configuración.</span>
+                                        <span class="font-semibold block text-slate-800">Dominio propio ($97 USD/año) "Quiero mi página YA (diseño $480 GRATIS)"</span>
+                                        <span class="text-sm text-slate-500">(Incluye .com, hosting y configuración inmediata)</span>
                                     </div>
                                 </div>
                             </label>
 
+                            <!-- Opción 3 -->
                             <label class="cursor-pointer relative block">
                                 <input type="radio" name="tipo_dominio" value="Asesoria" class="custom-radio sr-only">
                                 <div class="p-4 rounded-xl border border-slate-200 hover:border-amber-300 flex items-start gap-3 transition">
                                     <div class="radio-circle w-5 h-5 rounded-full border border-slate-300 mt-0.5 flex-shrink-0"></div>
-                                    <span class="font-semibold block text-slate-800">Tengo dudas, necesito asesoría</span>
+                                    <div>
+                                        <span class="font-semibold block text-slate-800">Dudas / Asesoría</span>
+                                        <span class="text-sm text-slate-500">Necesito ayuda antes de avanzar</span>
+                                    </div>
                                 </div>
                             </label>
                         </div>
@@ -398,32 +419,67 @@
                             </h3>
                         </div>
 
-                        <div class="space-y-3">
+                        <div class="space-y-4">
                             <label class="block text-sm font-medium text-slate-700 mb-2">¿Cuál es tu objetivo principal? <span class="text-red-500">*</span></label>
                             
-                            <label class="flex items-center gap-3 p-3 border rounded-lg hover:bg-slate-50 cursor-pointer">
-                                <input type="radio" name="objetivo" value="Aumentar clientes" class="custom-radio text-amber-600 focus:ring-amber-500" required onchange="toggleOtherInput('other-obj', false)">
-                                <span class="text-slate-700">Aumentar clientes</span>
-                            </label>
-                            
-                            <label class="flex items-center gap-3 p-3 border rounded-lg hover:bg-slate-50 cursor-pointer">
-                                <input type="radio" name="objetivo" value="Pedidos WhatsApp" class="custom-radio text-amber-600 focus:ring-amber-500" onchange="toggleOtherInput('other-obj', false)">
-                                <span class="text-slate-700">Recibir más pedidos por WhatsApp</span>
-                            </label>
-
-                            <label class="flex items-center gap-3 p-3 border rounded-lg hover:bg-slate-50 cursor-pointer">
-                                <input type="radio" name="objetivo" value="Presencia Profesional" class="custom-radio text-amber-600 focus:ring-amber-500" onchange="toggleOtherInput('other-obj', false)">
-                                <span class="text-slate-700">Tener presencia profesional</span>
+                            <!-- Aumentar clientes -->
+                            <label class="cursor-pointer relative block">
+                                <input type="radio" name="objetivo" value="Aumentar clientes" class="custom-radio sr-only" required onchange="toggleOtherInput('other-obj', false)">
+                                <div class="p-4 rounded-xl border border-slate-200 hover:border-amber-300 flex items-start gap-3 transition">
+                                    <div class="radio-circle w-5 h-5 rounded-full border border-slate-300 mt-0.5 flex-shrink-0"></div>
+                                    <div>
+                                        <span class="font-semibold block text-slate-800">Aumentar clientes</span>
+                                        <span class="text-sm text-slate-500">"Quiero atraer más personas a mi negocio y convertir visitas en ventas"</span>
+                                    </div>
+                                </div>
                             </label>
 
-                            <label class="flex items-center gap-3 p-3 border rounded-lg hover:bg-slate-50 cursor-pointer">
-                                <input type="radio" name="objetivo" value="Ventas Carrito" class="custom-radio text-amber-600 focus:ring-amber-500" onchange="toggleOtherInput('other-obj', false)">
-                                <span class="text-slate-700">Aumentar ventas con carrito de compras</span>
+                            <!-- Pedidos WhatsApp -->
+                            <label class="cursor-pointer relative block">
+                                <input type="radio" name="objetivo" value="Pedidos WhatsApp" class="custom-radio sr-only" onchange="toggleOtherInput('other-obj', false)">
+                                <div class="p-4 rounded-xl border border-slate-200 hover:border-amber-300 flex items-start gap-3 transition">
+                                    <div class="radio-circle w-5 h-5 rounded-full border border-slate-300 mt-0.5 flex-shrink-0"></div>
+                                    <div>
+                                        <span class="font-semibold block text-slate-800">Recibir más pedidos por WhatsApp</span>
+                                        <span class="text-sm text-slate-500">"Quiero que mis clientes me escriban más fácil y aumenten mis pedidos diarios"</span>
+                                    </div>
+                                </div>
                             </label>
 
-                            <label class="flex items-center gap-3 p-3 border rounded-lg hover:bg-slate-50 cursor-pointer">
-                                <input type="radio" name="objetivo" value="Otra" class="custom-radio text-amber-600 focus:ring-amber-500" onchange="toggleOtherInput('other-obj', true)">
-                                <span class="text-slate-700">Otra (describir)</span>
+                            <!-- Presencia Profesional -->
+                            <label class="cursor-pointer relative block">
+                                <input type="radio" name="objetivo" value="Presencia Profesional" class="custom-radio sr-only" onchange="toggleOtherInput('other-obj', false)">
+                                <div class="p-4 rounded-xl border border-slate-200 hover:border-amber-300 flex items-start gap-3 transition">
+                                    <div class="radio-circle w-5 h-5 rounded-full border border-slate-300 mt-0.5 flex-shrink-0"></div>
+                                    <div>
+                                        <span class="font-semibold block text-slate-800">Tener presencia profesional</span>
+                                        <span class="text-sm text-slate-500">"Quiero que mi negocio se vea serio, confiable y listo para crecer"</span>
+                                    </div>
+                                </div>
+                            </label>
+
+                            <!-- Carrito de compras -->
+                            <label class="cursor-pointer relative block">
+                                <input type="radio" name="objetivo" value="Ventas Carrito" class="custom-radio sr-only" onchange="toggleOtherInput('other-obj', false)">
+                                <div class="p-4 rounded-xl border border-slate-200 hover:border-amber-300 flex items-start gap-3 transition">
+                                    <div class="radio-circle w-5 h-5 rounded-full border border-slate-300 mt-0.5 flex-shrink-0"></div>
+                                    <div>
+                                        <span class="font-semibold block text-slate-800">Aumentar ventas con carrito de compra</span>
+                                        <span class="text-sm text-slate-500">"Quiero vender automáticamente con un catálogo y carrito que trabaje por mí"</span>
+                                    </div>
+                                </div>
+                            </label>
+
+                            <!-- Otro -->
+                            <label class="cursor-pointer relative block">
+                                <input type="radio" name="objetivo" value="Otra" class="custom-radio sr-only" onchange="toggleOtherInput('other-obj', true)">
+                                <div class="p-4 rounded-xl border border-slate-200 hover:border-amber-300 flex items-start gap-3 transition">
+                                    <div class="radio-circle w-5 h-5 rounded-full border border-slate-300 mt-0.5 flex-shrink-0"></div>
+                                    <div>
+                                        <span class="font-semibold block text-slate-800">Otro (describir)</span>
+                                        <span class="text-sm text-slate-500">"Tengo un objetivo específico y quiero que la web se adapte exactamente a él"</span>
+                                    </div>
+                                </div>
                             </label>
 
                             <div id="other-obj" class="hidden mt-2 pl-8">
@@ -589,6 +645,8 @@
 
         function toggleOtherInput(elementId, show) {
             const el = document.getElementById(elementId);
+            if (!el) return; // Guard clause in case element was removed
+            
             if (show) {
                 el.classList.remove('hidden');
                 el.querySelector('textarea').setAttribute('required', 'true');
